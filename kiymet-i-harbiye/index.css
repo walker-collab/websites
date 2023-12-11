@@ -1,0 +1,1075 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#navbar1 {
+    position: fixed;
+    width: 100vw;
+    height: 15vh;
+    background-color: white;
+    border-bottom: grey;
+    z-index: 10;
+}
+#navbarlinks a {
+    overflow: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-style: none;
+    color: rgb(0, 0, 0);
+    font: bold;
+    font-size: 120%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+#navbarlinks a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: width .3s;
+    background-color: rgb(0, 0, 0);
+}
+#navbarlinks a:hover {
+    color: rgb(0, 0, 0);
+    opacity: 1;
+}
+#navbarlinks a:hover:after {
+    width: 100%;
+}
+#navbarlinks {
+    z-index: 10;
+    margin-top: 3%;
+    display: inline-block;
+    position: fixed;
+    left: 40%;
+}
+#navbarlogo {
+    z-index: 10;
+    margin-top: 1%;
+    margin-left: 1%;
+    position: absolute;
+    left: 1%;
+}
+#homepagevideo {
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+#firstglance {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+#firstenter {
+    position: relative;
+    background-color: rgb(226, 226, 226);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#secondenter {
+    position: relative;
+    background-color: white;
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#firstenter2 {
+    display: flex;
+    justify-content: center;
+}
+#define {
+    font-style: none;
+    text-decoration: none;
+    text-decoration-style: none;
+    border-style: none;
+    flex-basis: 20%;
+    margin-top: 1%;
+    padding: 1%;
+    text-align: center;
+}     
+#defineimg #legolarimg {
+    max-width: 50%;
+    height: auto;
+}                                                                                                                                                                                                              
+#defineimg {
+    flex-basis: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+#secondentertext {
+    font-size: 400%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*help boxes*/
+.boxes2d1 {
+    width: 100vw;
+    height: 80vh;
+    overflow-y: hidden;
+}
+.boxes2d2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.boxesimgclass1 {
+    position: relative;
+    background-image: url('images/coffebeans.jpg');
+    cursor: pointer;
+    flex-grow: 1;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    z-index: 2;
+}
+.boxesimgclass1 p {
+    padding-top: 10vh;
+    position: relative;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+}
+.boxesimgclass1:hover p {
+    color: white;
+    z-index: 4;
+    opacity: 1;
+}
+.boxesimgclass1:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.918);
+    transition: opacity 0.3s ease;
+    z-index: 3;
+}
+.boxesimgclass1:hover:before {
+    opacity: 1;
+    z-index: 3;
+}
+.boxesimgclass2 {
+    position: relative;
+    background-image: url('images/twoglass.jpg');
+    cursor: pointer;
+    flex-grow: 1;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+}
+.boxesimgclass2 p {
+    padding-top: 10vh;
+    position: relative;
+    z-index: 9;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+}
+.boxesimgclass2:hover p {
+    opacity: 1;
+}
+.boxesimgclass2 {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.918);
+    transition: opacity 0.3s ease;
+}
+.boxesimgclass2:hover:before {
+    opacity: 1;
+}
+.boxesimgclass3 {
+    position: relative;
+    background-image: url('images/direction.jpg');
+    cursor: pointer;
+    flex-grow: 1;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+}
+.boxesimgclass3 p {
+    padding-top: 10vh;
+    position: relative;
+    z-index: 9;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+}
+.boxesimgclass3:hover p {
+    opacity: 1;
+}
+.boxesimgclass3:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.904);
+    transition: opacity 0.3s ease;
+}
+.boxesimgclass3:hover:before {
+    opacity: 1;
+}
+.boxesimgclass4 {
+    position: relative;
+    background-image: url('images/thesingleone.jpg');
+    cursor: pointer;
+    flex-grow: 1;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+}
+.boxesimgclass4 p {
+    padding-top: 10vh;
+    position: relative;
+    z-index: 9;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+}
+.boxesimgclass4:hover p {
+    opacity: 1;
+}
+.boxesimgclass4:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.884);
+    transition: opacity 0.3s ease;
+}
+.boxesimgclass4:hover:before {
+    opacity: 1;
+}
+.boxesimgclass5 {
+    position: relative;
+    background-image: url('images/stone.jpg');
+    cursor: pointer;
+    flex-grow: 1;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+}
+.boxesimgclass5 p {
+    padding-top: 10vh;
+    position: relative;
+    z-index: 9;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+}
+.boxesimgclass5:hover p {
+    opacity: 1;
+}
+.boxesimgclass5:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.925);
+    transition: opacity 0.3s ease;
+}
+.boxesimgclass5:hover:before {
+    opacity: 1;
+}
+.boxesimgclass6 {
+    position: relative;
+    background-image: url('images/sakura.jpg');
+    cursor: pointer;
+    flex-grow: 1;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+}
+.boxesimgclass6 p {
+    padding-top: 10vh;
+    position: relative;
+    z-index: 9;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+}
+.boxesimgclass6:hover p {
+    opacity: 1;
+}
+.boxesimgclass6:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.911);
+    transition: opacity 0.3s ease;
+}
+.boxesimgclass6:hover:before {
+    opacity: 1;
+}
+.boxesimgclass7 {
+    position: relative;
+    background-image: url('images/spiderweb.jpg');
+    cursor: pointer;
+    flex-grow: 1;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+}
+.boxesimgclass7 p {
+    padding-top: 10vh;
+    position: relative;
+    z-index: 9;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+}
+.boxesimgclass7:hover p {
+    opacity: 1;
+}
+.boxesimgclass7:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.904);
+    transition: opacity 0.3s ease;
+}
+.boxesimgclass7:hover:before {
+    opacity: 1;
+}
+.boxesimgclass8 {
+    position: relative;
+    background-image: url('images/mountain2.jpg');
+    cursor: pointer;
+    flex-grow: 1;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+}
+.boxesimgclass8 p {
+    padding-top: 10vh;
+    position: relative;
+    z-index: 9;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+}
+.boxesimgclass8:hover p {
+    opacity: 1;
+}
+.boxesimgclass8:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.925);
+    transition: opacity 0.3s ease;
+}
+.boxesimgclass8:hover:before {
+    opacity: 1;
+}
+.boxesimgclass9 {
+    position: relative;
+    background-image: url('images/coffebeans.jpg');
+    cursor: pointer;
+    flex-grow: 1;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+}
+.boxesimgclass9 p {
+    padding-top: 10vh;
+    position: relative;
+    z-index: 9;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+}
+.boxesimgclass9:hover p {
+    opacity: 1;
+}
+.boxesimgclass9:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.918);
+    transition: opacity 0.3s ease;
+}
+.boxesimgclass9:hover:before {
+    opacity: 1;
+}
+.boxesimgclass10 {
+    position: relative;
+    background-image: url('images/openyard.jpg');
+    cursor: pointer;
+    flex-grow: 1;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+}
+.boxesimgclass10 p {
+    padding-top: 10vh;
+    position: relative;
+    z-index: 9;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+}
+.boxesimgclass10:hover p {
+    opacity: 1;
+}
+.boxesimgclass10:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.897);
+    transition: opacity 0.3s ease;
+}
+.boxesimgclass10:hover:before {
+    opacity: 1;
+}
+.boxesimgclass11 {
+    position: relative;
+    background-image: url('images/feather.jpg');
+    cursor: pointer;
+    flex-grow: 1;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+}
+.boxesimgclass11 p {
+    padding-top: 10vh;
+    position: relative;
+    z-index: 9;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+}
+.boxesimgclass11:hover p {
+    opacity: 1;
+}
+.boxesimgclass11:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.89);
+    transition: opacity 0.3s ease;
+}
+.boxesimgclass11:hover:before {
+    opacity: 1;
+}
+/*for the cards*/
+#team {
+    background-color: white;
+    width: 100vw;
+    height: 50vh;
+}
+#team2 {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#teammembers {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 300px;
+    height: 300px;
+}
+#card_text {
+    opacity: 0;
+    left: 5%;
+    bottom: 5%;
+    position: absolute;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*member1*/
+.teammembersclass1 {
+    position: relative;
+    background-size: cover;
+}
+.teammembersclass1:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.637);
+    transition: opacity 0.3s ease;
+}
+.teammembersclass1:hover::before {
+    opacity: 1;
+}
+.teammembersclass1:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.teammembersclass1:hover #card_text {
+    opacity: 1;
+}
+/*member2*/
+.teammembersclass2 {
+    position: relative;
+    background-size: cover;
+}
+.teammembersclass2:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.651);
+    transition: opacity 0.3s ease;
+}
+.teammembersclass2:hover:before {
+    opacity: 1;
+}
+.teammembersclass2:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.teammembersclass2:hover #card_text {
+    opacity: 1;
+}
+/*member3*/
+.teammembersclass3 {
+    position: relative;
+    background-size: cover;
+}
+.teammembersclass3:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.671);
+    transition: opacity 0.3s ease;
+}
+.teammembersclass3:hover:before {
+    opacity: 1;
+}
+.teammembersclass3:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.teammembersclass3:hover #card_text {
+    opacity: 1;
+}
+/*member4*/
+.teammembersclass4 {
+    position: relative;
+    background-size: cover;
+}
+.teammembersclass4:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.61);
+    transition: opacity 0.3s ease;
+}
+.teammembersclass4:hover:before {
+    opacity: 1;
+}
+.teammembersclass4:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.teammembersclass4:hover #card_text {
+    opacity: 1;
+}
+
+#teamtoptext {
+    position: relative;
+    width: 100vw;
+    height: 20vh;
+}
+#teamtoptext2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#teamtoptext p {
+    font-size: 400%;
+    font-family:'Courier New', Courier, monospace;
+}
+#teambottomtext {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#teambottomtext p {
+    font-size: 400%;
+    font-family:'Courier New', Courier, monospace;
+}
+#companys {
+    background-color: grey;
+    width: 100vw;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.teammembersclass1:hover {
+    cursor: pointer;
+}
+.teammembersclass2 {
+    cursor: pointer;
+}
+.teammembersclass3 {
+    cursor: pointer;
+}
+.teammembersclass4 {
+    cursor: pointer;
+}
+/*second member*/
+#member1_info1 {
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 3;
+    display: flex;
+}
+#member1_info2 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 5vh;
+    z-index: 5;
+    padding: 5%;
+    width: 50vw;
+    height: 100vh;
+    background-color: rgb(212, 206, 206);
+}
+#member1_info3 p {
+    overflow-x: hidden;
+    z-index: 5;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+}
+#member1_info_img {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: url('images/greenplant.jpg') no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    right: 0;
+}
+#team_member_info_close {
+    font-size: 300%;
+    cursor: pointer;
+}
+#team_member4_info_close {
+    font-size: 300%;
+    cursor: pointer;
+}
+/*second member*/
+#member2_info1 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 0;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    z-index: 3;
+}
+#member2_info2 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: url('images/bigyard.jpg') no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    right: 0;
+}
+#member2_info3 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 5vh;
+    z-index: 5;
+    padding: 5%;
+    width: 50vw;
+    height: 100vh;
+    background-color: rgb(212, 206, 206);
+}
+#member2_info3 p {
+    z-index: 5;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+}
+#team_member2_info_close {
+    font-size: 300%;
+    cursor: pointer;
+}
+/*third member*/
+#member3_info1 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 0;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    z-index: 3;
+}
+#member3_info2 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: url('/images/openyard.jpg') no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    right: 0;
+}
+#member3_info3 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 5vh;
+    z-index: 5;
+    padding: 5%;
+    width: 50vw;
+    height: 100vh;
+    background-color: rgb(212, 206, 206);
+}
+#member3_info3 p {
+    z-index: 5;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    margin-top: -5%;
+}
+#team_member3_info_close {
+    font-size: 300%;
+    cursor: pointer;
+}
+/*team member 4*/
+#member4_info1 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 0;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    z-index: 3;
+}
+#member4_info2 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: url('/images/niceroad.jpg') no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    right: 0;
+}
+#member4_info3 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 5vh;
+    z-index: 5;
+    padding: 5%;
+    width: 50vw;
+    height: 100vh;
+    background-color: rgb(212, 206, 206);
+}
+#member4_info3 p {
+    z-index: 5;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    margin-top: -5%;
+}
+#bo_member4_info_close {
+    font-size: 300%;
+    cursor: pointer;
+}
+
+/*all the company logos combined*/
+@keyframes slide_animation {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+#company_logos {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    background-color: rgb(219, 219, 219);
+    overflow: hidden;
+}
+#companys_logos2 {
+    margin-top: 20vh;
+    padding: 20px 0;
+    background: rgb(255, 255, 255);
+    white-space: nowrap;
+}
+#companys_logos3 {
+    height: 20vh;
+    display: inline-block;
+    animation: 65s slide_animation infinite linear;
+}
+#companys_logos3 img {
+    height: 20vh;
+    mix-blend-mode: color-burn;
+    z-index: 3;
+}
+#companys_logos2:hover #companys_logos3 {
+    animation-play-state: paused;
+}
+/*square to circle animation*/
+#square_circle {
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    height: 50vw;
+    width: 100vw;
+}
+#square_to_circle2 {
+    position: relative;
+    width: 50vw;
+    height: 50vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#square_to_circle2_text {
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-size: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#square_to_circle2:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70%;
+    width: 70%;
+    border: 10px solid rgb(255, 0, 0);
+    box-sizing: border-box;
+    margin-top: 15%;
+    margin-left: 15%;
+    border-radius: 0;
+    transition: border-radius 0.3s ease;
+}
+#square_to_circle2:hover:before {
+    border-radius: 60%;
+}
+
+.circle_to_square {
+    position: relative;
+    width: 50vw;
+    height: 50vw;
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.circle_to_square_text {
+    color: white;
+    text-align: center;
+    font-size: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.circle_to_square:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70%;
+    width: 70%;
+    border: 10px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+    margin-top: 15%;
+    margin-left: 15%;
+    border-radius: 0;
+    transition: border-radius 0.3s ease;
+}
+.circle_to_square:hover:before {
+    border-radius: 60%;
+}
+/*contact info*/
+#contact {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    background-color: #2f4d61;
+}
+#contacttext {
+    text-align: center;   
+    justify-content: center;
+    padding: 5%;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#contacttext p {
+    font-size: 100%;
+}
+#contacttext h2 {
+    font-size: 200%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*location*/
+#placelocation {
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+}
+#placelocation iframe {
+    width: 100vw;
+    height: 70vh;
+}
+/*social links*/
+#socialplatforms_section {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+    width: 100vw;
+    height: 20vh;
+}
+#socialplatforms_section2 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 5vh;
+}
+#socialplatforms_adjust a img {
+    width: 5vw;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+#socialplatforms_adjust a {
+    opacity: 0.8;
+}
+#socialplatforms_adjust a:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+#socialplatforms_section2 p {
+    padding: 3%;
+    color: rgb(75, 75, 75);
+}
